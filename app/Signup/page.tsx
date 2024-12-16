@@ -50,7 +50,7 @@ export default function Signup() {
  
   useEffect(() => {
     if (isSignedIn) {
-      router.push("/home");
+      router.push("/");
     }
   }, [isSignedIn]);
 
@@ -58,8 +58,8 @@ export default function Signup() {
     <div className="flex items-center justify-center w-screen h-screen">
       <SignUp
         signInUrl="/login"
-        forceRedirectUrl="/home"
-        signInForceRedirectUrl="/home"
+        forceRedirectUrl="/"
+        signInForceRedirectUrl="/"
       />
     </div>
   );
